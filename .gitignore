@@ -1,0 +1,14 @@
+# Base de dados (baixar do Portal de Dados Abertos, ver README)
+dados_infosiga/
+*.parquet
+
+# Ambiente virtual
+.venv/
+venv/
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
