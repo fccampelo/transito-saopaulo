@@ -116,4 +116,8 @@ Execute as células de cima para baixo. A primeira leitura dos CSVs demora um po
 
 ## Status
 
-O projeto ainda está em andamento. Até agora estão prontos a proposta, o referencial teórico, o diagrama da solução e o cronograma. A análise exploratória e os modelos entram nas próximas etapas.
+O projeto está em andamento. Na implementação parcial (26/10/2026), foram concluídos uma análise exploratória inicial do recorte de sinistros de 2019–2024, um cache analítico em Parquet e um baseline de regressão logística com teste temporal em 2024. A célula do notebook apresenta as métricas, gráficos, tabelas de qualidade e perfil agregado de vítimas.
+
+O modelo base obteve Average Precision de 0,2291 (prevalência no teste: 0,0294) e ROC-AUC de 0,8710. No limiar de 0,5, a revocação foi 0,8047 e a precisão, 0,0995; o limiar ainda precisa ser ajustado para o objetivo de uso. A análise não é causal e os volumes por região ou modal não são taxas de risco.
+
+Continuam pendentes para a entrega final: série mensal de óbitos e modelos de previsão, integração agregada das tabelas de pessoas e veículos ao classificador, comparação com modelos baseados em árvores, calibração e limiar, interpretação avançada e análise espacial com denominadores adequados. Os arquivos Parquet são caches locais ignorados pelo Git e são recriados pelo notebook quando ausentes.
